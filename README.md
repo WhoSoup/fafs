@@ -3,7 +3,7 @@
 This app showcases how one could use the Factom Protocol in order to timestamp the contents of a directory, securing both the contents of the files and the point in time they existed. It monitors
 a Factom node every minute until a new block height has been reached, at which point a snapshot of the given directory is created and its merkle root submitted. *While the files are read, no file data is written to the blockchain.*
 
-Snapshots are files containing the file hashes and paths of every file in the directory and its subdirectories. For the purposes of demonstration, the snapshot files are stored on disk, however they can be deterministically recreated as long as the contents of the directory do not change. In lieu of creating the merkle root of a directory, a directory's [IPFS CID](https://docs.ipfs.io/guides/concepts/cid/) could also be used.
+Snapshots are files containing the file hashes and paths of every file in the directory and its subdirectories. For the purposes of demonstration, the snapshot files are stored on disk, however they can be deterministically recreated as long as the contents of the directory do not change. In lieu of creating the merkle root of a directory in this manner, a directory's [IPFS CID](https://docs.ipfs.io/guides/concepts/cid/) could also be used.
 
 ## Installation
 

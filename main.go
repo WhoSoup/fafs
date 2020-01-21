@@ -144,5 +144,6 @@ func SubmitSnapshot(client *factom.Client, snapFile string, merkle []byte, eckey
 		return &factom.Bytes32{}, err
 	}
 
+	// the hash field is populated after the compose step
 	return entry.Hash, nil
 }

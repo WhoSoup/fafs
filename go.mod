@@ -1,4 +1,4 @@
-module github.com/WhoSoup/ffs
+module github.com/WhoSoup/fafs
 
 go 1.13
 

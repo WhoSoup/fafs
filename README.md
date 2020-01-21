@@ -1,2 +1,2 @@
-# ffs
-Factomizing File System
+# fafs
+Factomizing a File System

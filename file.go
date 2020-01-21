@@ -91,7 +91,7 @@ func BuildList(path string) ([]merkletree.Content, error) {
 			if _, err := fi.CalculateHash(); err != nil {
 				return nil, err
 			}
-			list = append(list)
+			list = append(list, fi)
 		}
 	}
 

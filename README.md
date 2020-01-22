@@ -29,3 +29,10 @@ The demo requires several parameters in order to function:
 As it stands, the app only serves as a showcase and the corresponding management of directory snapshots and backups is not addressed. A more realistic scenario would be to monitor a backup system that takes immutable snapshots of websites or database backups. Every ten minutes (or every hour, or once a day) a Factom snapshot is created for all new items in the backup system. Items that have already been Factomized once do not need to be included in a second snapshot.
 
 Another feature to add is the cryptographic signing of entries. Since everyone is free to write to every chain, there is no way to distinguish legitimate entries from fakes. For purposes of proving *existence*, it is not necessary to do so, but there are some cases where it is desired to filter out all unnecessary entries. This can be accomplished, for example, by signing (`Height` + `ChainID` + `ExtId[0]` + `Content`) and storing the signature in `ExtID[1]`
+
+## Further Information
+
+Factomize is happy to assist in the implementation of FAFS, or showcasing additional functionality as requested. Please reach out to us with any questions you may have.
+
+* David Chapman: [david@factomize.com](mailto:david@factomize.com) (CEO)
+* Who Soup: [who@factomize.com](mailto:who@factomize.com) (Lead Developer)
